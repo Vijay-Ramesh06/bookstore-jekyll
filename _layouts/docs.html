@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+    </div>
+  </header>
+  <div class="wrapper" style="display:flex; gap:2rem; padding:2rem 0;">
+    <nav style="min-width:220px; font-size:0.9rem;">
+      <ul style="list-style:none; padding:0;">
+        <li><strong>Getting Started</strong>
+          <ul>
+            <li><a href="{{ "/docs/getting-started/setup/introduction/" | relative_url }}">Introduction</a></li>
+            <li><a href="{{ "/docs/getting-started/setup/environment-setup/" | relative_url }}">Environment Setup</a></li>
+            <li><a href="{{ "/docs/getting-started/setup/testing/" | relative_url }}">Testing</a></li>
+            <li><a href="{{ "/docs/getting-started/authentication/authentication/" | relative_url }}">Authentication</a></li>
+            <li><a href="{{ "/docs/getting-started/authentication/rate-limiting/" | relative_url }}">Rate Limiting</a></li>
+            <li><a href="{{ "/docs/getting-started/basics/quickstart/" | relative_url }}">Quickstart</a></li>
+            <li><a href="{{ "/docs/getting-started/basics/errors/" | relative_url }}">Errors</a></li>
+          </ul>
+        </li>
+        <li><strong>Endpoints</strong>
+          <ul>
+            <li><a href="{{ "/docs/endpoints/books/list-books/" | relative_url }}">List Books</a></li>
+            <li><a href="{{ "/docs/endpoints/books/get-book/" | relative_url }}">Get Book</a></li>
+            <li><a href="{{ "/docs/endpoints/books/create-book/" | relative_url }}">Create Book</a></li>
+            <li><a href="{{ "/docs/endpoints/books/update-book/" | relative_url }}">Update Book</a></li>
+            <li><a href="{{ "/docs/endpoints/books/delete-book/" | relative_url }}">Delete Book</a></li>
+            <li><a href="{{ "/docs/endpoints/authors/list-authors/" | relative_url }}">List Authors</a></li>
+            <li><a href="{{ "/docs/endpoints/authors/get-author/" | relative_url }}">Get Author</a></li>
+            <li><a href="{{ "/docs/endpoints/authors/create-author/" | relative_url }}">Create Author</a></li>
+            <li><a href="{{ "/docs/endpoints/authors/update-author/" | relative_url }}">Update Author</a></li>
+            <li><a href="{{ "/docs/endpoints/authors/delete-author/" | relative_url }}">Delete Author</a></li>
+            <li><a href="{{ "/docs/endpoints/orders/list-orders/" | relative_url }}">List Orders</a></li>
+            <li><a href="{{ "/docs/endpoints/orders/get-order/" | relative_url }}">Get Order</a></li>
+            <li><a href="{{ "/docs/endpoints/orders/create-order/" | relative_url }}">Create Order</a></li>
+            <li><a href="{{ "/docs/endpoints/orders/update-order/" | relative_url }}">Update Order</a></li>
+            <li><a href="{{ "/docs/endpoints/orders/cancel-order/" | relative_url }}">Cancel Order</a></li>
+            <li><a href="{{ "/docs/endpoints/customers/list-customers/" | relative_url }}">List Customers</a></li>
+            <li><a href="{{ "/docs/endpoints/customers/get-customer/" | relative_url }}">Get Customer</a></li>
+            <li><a href="{{ "/docs/endpoints/customers/create-customer/" | relative_url }}">Create Customer</a></li>
+            <li><a href="{{ "/docs/endpoints/customers/update-customer/" | relative_url }}">Update Customer</a></li>
+            <li><a href="{{ "/docs/endpoints/categories/list-categories/" | relative_url }}">List Categories</a></li>
+            <li><a href="{{ "/docs/endpoints/categories/get-category/" | relative_url }}">Get Category</a></li>
+            <li><a href="{{ "/docs/endpoints/categories/create-category/" | relative_url }}">Create Category</a></li>
+            <li><a href="{{ "/docs/endpoints/reviews/list-reviews/" | relative_url }}">List Reviews</a></li>
+            <li><a href="{{ "/docs/endpoints/reviews/create-review/" | relative_url }}">Create Review</a></li>
+            <li><a href="{{ "/docs/endpoints/reviews/delete-review/" | relative_url }}">Delete Review</a></li>
+            <li><a href="{{ "/docs/endpoints/inventory/get-inventory/" | relative_url }}">Get Inventory</a></li>
+            <li><a href="{{ "/docs/endpoints/inventory/update-inventory/" | relative_url }}">Update Inventory</a></li>
+          </ul>
+        </li>
+        <li><strong>Guides</strong>
+          <ul>
+            <li><a href="{{ "/docs/guides/api-usage/pagination/" | relative_url }}">Pagination</a></li>
+            <li><a href="{{ "/docs/guides/api-usage/filtering/" | relative_url }}">Filtering</a></li>
+            <li><a href="{{ "/docs/guides/api-usage/sorting/" | relative_url }}">Sorting</a></li>
+            <li><a href="{{ "/docs/guides/integration/webhooks/" | relative_url }}">Webhooks</a></li>
+            <li><a href="{{ "/docs/guides/integration/sdks/" | relative_url }}">SDKs</a></li>
+            <li><a href="{{ "/docs/guides/integration/use-cases/" | relative_url }}">Use Cases</a></li>
+            <li><a href="{{ "/docs/guides/integration/best-practices/" | relative_url }}">Best Practices</a></li>
+          </ul>
+        </li>
+        <li><strong>OpenAPI</strong>
+          <ul>
+            <li><a href="{{ "/docs/openapi/specification/overview/" | relative_url }}">Overview</a></li>
+            <li><a href="{{ "/docs/openapi/specification/spec/" | relative_url }}">Spec</a></li>
+            <li><a href="{{ "/docs/openapi/specification/testing/" | relative_url }}">Testing</a></li>
+          </ul>
+        </li>
+        <li><strong>Reference</strong>
+          <ul>
+            <li><a href="{{ "/docs/reference/data-models/schemas/" | relative_url }}">Schemas</a></li>
+            <li><a href="{{ "/docs/reference/data-models/status-codes/" | relative_url }}">Status Codes</a></li>
+            <li><a href="{{ "/docs/reference/data-models/glossary/" | relative_url }}">Glossary</a></li>
+            <li><a href="{{ "/docs/reference/support/changelog/" | relative_url }}">Changelog</a></li>
+            <li><a href="{{ "/docs/reference/support/faq/" | relative_url }}">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main style="flex:1;">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>
